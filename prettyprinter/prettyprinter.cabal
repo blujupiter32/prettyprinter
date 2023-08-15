@@ -25,6 +25,7 @@ source-repository head
 library
     exposed-modules:
           Prettyprinter
+        , Prettyprinter.Hidden
         , Prettyprinter.Internal
         , Prettyprinter.Internal.Debug
         , Prettyprinter.Internal.Type

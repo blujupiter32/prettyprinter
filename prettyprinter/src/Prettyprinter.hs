@@ -276,6 +276,9 @@ module Prettyprinter (
     reAnnotateS,
     alterAnnotationsS,
 
+    -- * Hiding
+    Hidden(..),
+
     -- * Optimization
     --
     -- Render documents faster
@@ -303,6 +306,7 @@ module Prettyprinter (
 #if !(SEMIGROUP_MONOID_SUPERCLASS)
 import Data.Semigroup
 #endif
+import Prettyprinter.Hidden
 import Prettyprinter.Internal
 import Prettyprinter.Symbols.Ascii
 
