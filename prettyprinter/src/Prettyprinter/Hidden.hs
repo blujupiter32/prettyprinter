@@ -6,7 +6,7 @@ import Prettyprinter.Internal (emptyDoc, Pretty (pretty))
 -- | Wrap a value with 'Hidden' to exclude it from prettyprinted output.
 --
 -- The type of the wrapped value does not require a `Pretty` instance.
-newtype Hidden a = Hidden a
+newtype Hidden a = Hidden a deriving (Eq, Read, Show)
 
 -- | >>> pretty (Hidden ())
 -- <BLANKLINE>
